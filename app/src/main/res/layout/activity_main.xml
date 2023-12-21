@@ -7,34 +7,27 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-
+    <FrameLayout
+        android:id="@+id/fragment"
         android:layout_width="match_parent"
-        android:background="#FFFFFF"
+        android:layout_height="match_parent"
+        android:src="@drawable/homeoutline"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+    </FrameLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
         android:id="@+id/drawerlayout"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true">
 
-
-        <FrameLayout
-            android:id="@+id/fragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent
-            android:padding="10dp"
-            android:id="@+id/eventbtn"
-            android:layout_weight="1"
-            android:src="@drawable/homeoutline"
-            />
-
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            />
-            android:layout_above="@id/navigation_bar">
-
-        </FrameLayout>
 
 
 
@@ -65,13 +58,14 @@
                 android:padding="10dp"
                 android:id="@+id/homebtn"
                 android:layout_weight="1"
-                android:src="@drawable/homeoutline"/>
+                android:src="@drawable/homecolor"/>
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:id="@+id/commbtn"
+                android:src="@drawable/event"
+                android:id="@+id/eventbtn"
                 android:padding="10dp"
                 />
 
@@ -86,6 +80,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:id="@+id/shopbtn"
+                android:src="@drawable/event_icon"
                 android:padding="10dp"
                 />
 
@@ -112,7 +107,7 @@
             android:src="@drawable/add"
             android:scaleType="center"
             app:maxImageSize="35dp"
-            android:contentDescription="TODO" />
+            />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

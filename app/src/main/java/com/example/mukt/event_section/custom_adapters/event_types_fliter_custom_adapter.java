@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Color;
 import android.provider.CalendarContract;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,6 +41,7 @@ public class event_types_fliter_custom_adapter extends FirebaseRecyclerAdapter<e
     @Override
     protected void onBindViewHolder(@NonNull myviewHolder holder, @SuppressLint("RecyclerView") int position, @NonNull event_type model) {
 
+        Log.d("soumen-event",model.getType_name());
 
         if(index == position)
         {
